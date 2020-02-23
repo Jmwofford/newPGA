@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+
+<!-- Have a form so users can add/edit players. The form must include the following three fields: firstName:String, lastName:String, score:Integer[0,100] -->
+<h2 class="main">Create Player</h2>
+
+<div class="createPlayer">
+  <input type="text" placeholder="First Name" class="first">
+  <input type="text" placeholder="Last Name" class="last">
+  <input type="text" placeholder="Score" class="score">
+  <button onclick="createPlayer()" class="submit">Create Player</button>
+</div>
+
+
+
+
+<table class="super">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Par</th>
+    </tr>
+    </thead>
+    <tbody class="playerContainer">
+      <!-- Adding Rows -->
+    <tr>
+        <td>Monte Falco</td>
+        <td>16</td>
+        <td>Parco Foreste Casentinesi</td>
+    </tr>
+      <!-- Adding Rows -->
+    <tr>
+        <td>Monte Falterona</td>
+        <td>15</td>
+        <td>Parco Foreste Casentinesi</td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Display the leaderboard in a tabular format sorted by score, and lastName in ASCENDING order. Therefore, if two players have the same score, the sorting will fall back to lastName -->
+
+
+<!-- The names displayed on the leaderboard should be combined into one field when displaying as such: lastName, firstName -->
+
+
+<!-- Have the ability to remove players by clicking a Delete button in the leaderboard. -->
+
+
+
+
+
+<!-- Choose Course -->
+
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="server.js" ></script>
+  </body>
+</html>

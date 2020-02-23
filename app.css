@@ -1,0 +1,16 @@
+.super,
+thead,
+th,
+tr,
+tbody,
+td {
+  border: solid black;
+  padding: 1em;
+}
+
+body {
+  padding: 1em;
+}
+.createPlayer {
+  margin: 1em;
+}
