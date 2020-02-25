@@ -1,16 +1,136 @@
-.super,
 thead,
 th,
 tr,
 tbody,
-td {
+td,
+.uniqueRow {
   border: solid black;
   padding: 1em;
+  background-color: slategray;
 }
-
+.super {
+  border: solid black;
+  padding: 3em;
+  background-color: slategray;
+}
+td:hover {
+  background-color: lemonchiffon;
+}
 body {
   padding: 1em;
+  background-color: grey;
+  font-family: serif;
 }
 .createPlayer {
-  margin: 1em;
+  margin: 0.5em;
+  border-width: 1px;
+  padding: 23px;
+  width: 60%;
+}
+.deleteBtn {
+  border: solid red;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 25px;
+  width: 20%;
+  background-color: red;
+  color: white;
+  margin-top: 12px;
+}
+.deleteBtn:hover {
+  border: solid red;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 25px;
+  width: 20%;
+  background-color: lemonchiffon;
+  color: black;
+  margin-top: 12px;
+}
+.editBtn {
+  border: solid green;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 25px;
+  width: 20%;
+  background-color: green;
+  color: white;
+  margin-top: 12px;
+}
+.submit {
+  border: solid green;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 25px;
+  width: 80%;
+  background-color: green;
+  color: white;
+  margin-top: 12px;
+}
+.editBtn:hover {
+  border: solid green;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 25px;
+  width: 20%;
+  background-color: lemonchiffon;
+  color: black;
+  margin-top: 12px;
+}
+input {
+  font-size: 15px;
+  border-radius: 25px;
+  text-align: center;
+}
+.weatherContainer {
+  display: flex;
+  padding: 1em;
+}
+.pga {
+  border: solid green;
+  border-radius: 50px;
+  padding: 6px;
+  margin: 25px;
+  width: 12%;
+  text-align: center;
+  border-width: 1.3px;
+}
+.pga:hover {
+  border: solid green;
+  border-radius: 50px;
+  padding: 6px;
+  margin: 25px;
+  background-color: chartreuse;
+  width: 12%;
+}
+.rain {
+  background-image: url("http://2.bp.blogspot.com/-S0eL92eEO5o/UhfYyWumkvI/AAAAAAAAjTI/MaiSP5m1D_g/s1600/rain+animation779.gif");
+  background-size: cover;
+}
+.shine {
+  background-image: url("https://media.giphy.com/media/W86g3iCzRUhNK/giphy-downsized-large.gif");
+  background-size: cover;
+}
+.snow {
+  background-image: url("https://66.media.tumblr.com/98d21f2499b09a96ee958f559f26c61a/tumblr_mxbdstH71S1sfvpsto1_1280.gif");
+}
+.courseContainer {
+  display: flex;
+  padding: 25px;
+}
+.course {
+  border: solid green;
+  margin: 12px;
+  padding: 13px;
+  border-radius: 15px;
+}
+.courseView {
+  width: 100%;
+  height: 62vh;
+  border: solid purple;
+  background-size: cover;
+}
+.par,
+.parVal {
+  color: white;
 }

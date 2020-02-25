@@ -11,41 +11,103 @@
   <body>
 
 <!-- Have a form so users can add/edit players. The form must include the following three fields: firstName:String, lastName:String, score:Integer[0,100] -->
+
 <h2 class="main">Create Player</h2>
+
 
 <div class="createPlayer">
   <input type="text" placeholder="First Name" class="first">
   <input type="text" placeholder="Last Name" class="last">
   <input type="text" placeholder="Score" class="score">
   <button onclick="createPlayer()" class="submit">Create Player</button>
-</div>
+</div> 
+
+
+
 
 
 
 
 <table class="super">
     <thead>
-    <tr>
+      <tr>
       <th>Name</th>
+      <th>Thru</th>
       <th>Score</th>
-      <th>Par</th>
+      <th>Strokes</th>
     </tr>
     </thead>
     <tbody class="playerContainer">
-      <!-- Adding Rows -->
     <tr>
         <td>Monte Falco</td>
-        <td>16</td>
-        <td>Parco Foreste Casentinesi</td>
+        <td>F</td>
+        <td>-18</td>
+        <td>266</td>
     </tr>
-      <!-- Adding Rows -->
     <tr>
         <td>Monte Falterona</td>
-        <td>15</td>
-        <td>Parco Foreste Casentinesi</td>
+        <td>F</td>
+        <td>-16</td>
+        <td>321</td>
     </tr>
     </tbody>
-</table>
+  </table>
+  <button onclick="editSomething()" class="editBtn">Edit</button>
+  <button onclick="deleteSomething()" class="deleteBtn">Delete</button>
+<div class="weatherContainer">
+  <div onclick="rain()" class="pga">Rain</div>
+  <div onclick="shine()" class="pga">Shine</div>
+  <div onclick="snow()" class="pga">Snow</div>
+</div>
+
+
+<div class="courseView">
+
+
+<h1 class="par">Par Value : <span class="parVal"> 0 </span></h1>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="courseContainer">
+
+    <div onclick="pebble()" class="course">  Pebble Beach GL (Pebble Beach, Calif.)
+  </div>
+    <div onclick="kap()" class="course">Kapalua Plantation Course.
+  </div>
+    <div id="" class="course">Spyglass Hill.
+  </div>
+    <div id="" class="course">Harbour Town.
+  </div>
+
+
+
+</div>
+<div class="courseContainer">
+
+  <div class="course">TPC Sawgrass.
+  </div>
+  <div class="course">Sea Island.
+  </div>
+  <div class="course">Old White TPC.
+  </div>
+  <div class="course">Torrey Pines South.
+  </div>
+  <div class="course">Bay Hill.
+  </div>
+  <div class="course">Innisbrook
+</div>
+
+
+
+</div>
 
 <!-- Display the leaderboard in a tabular format sorted by score, and lastName in ASCENDING order. Therefore, if two players have the same score, the sorting will fall back to lastName -->
 
